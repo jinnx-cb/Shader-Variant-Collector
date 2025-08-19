@@ -11,7 +11,7 @@ The collection ensures that required shader variants are precompiled and reduces
 - Runs automatically before builds.
 - Provides an editor window for manual collection and warmup testing.
 
-<img width="370" height="424" alt="Shader Variant Window" src="https://github.com/user-attachments/assets/adb5b7e6-16b4-4eb2-89d7-9b5f56595fe9" />
+<img width="563" height="454" alt="Shader Variant Window 2" src="https://github.com/user-attachments/assets/5860201d-a5ad-4fa5-a04d-ec256d5ee314" />
 
 ## Usage
 
@@ -31,3 +31,4 @@ The collection ensures that required shader variants are precompiled and reduces
 ## Notes
 - Keep the collection path under `Assets/` so it is included in version control.
 - Run **Editor Warmup Test** to confirm shader variants are available and avoid runtime compilation spikes.
+
