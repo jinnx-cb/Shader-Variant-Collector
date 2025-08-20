@@ -1,4 +1,4 @@
-# Shader Variant Collector (Unity Editor Tool)
+# Used Shaders/Variants Collector (Unity Editor Tool)
 
 This editor utility collects **all shaders, materials, prefabs, particle systems, and VFX graphs** in the project into a single `ShaderVariantCollection` asset.  
 The collection ensures that required shader variants are precompiled and reduces runtime hitching due to on-demand shader compilation. Can definitely be improved, so feel free to change it to your liking or to fit your project/needs.
