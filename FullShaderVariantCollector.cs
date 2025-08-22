@@ -14,7 +14,6 @@ public class FullShaderVariantCollector : EditorWindow, IPreprocessBuildWithRepo
     private static string _collectionPath = "Assets/AllGameShaders.shadervariants";
     private static readonly List<string> SearchRoots = new List<string> { "Assets/_Assets" };
 
-    /// Required by IPreprocessBuildWithReport. Controls callback execution order.
     private Vector2 _scroll;
     public int callbackOrder => 0;
 
@@ -108,7 +107,7 @@ public class FullShaderVariantCollector : EditorWindow, IPreprocessBuildWithRepo
 
     #region Collection Builder
 
-    /// Creates or rebuilds a ShaderVariantCollection from all materials, prefabs, particle systems, VFX graphs, and shaders found in the project.
+    /// Creates or rebuilds a ShaderVariantCollection from the project.
         private static void BuildCollection(string path, string[] searchFolders)
         {
             ShaderVariantCollection svc = AssetDatabase.LoadAssetAtPath<ShaderVariantCollection>(path);
@@ -238,7 +237,7 @@ public class FullShaderVariantCollector : EditorWindow, IPreprocessBuildWithRepo
     
     #region Warmup
 
-    /// Editor-only test. Warms up the ShaderVariantCollection immediately during Play Mode. Useful to confirm hitching is removed without building the game.
+    /// Editor test. Warms up the ShaderVariantCollection immediately during Play Mode. Useful to confirm hitching is removed without building the game.
     private static void TestWarmup(string path)
     {
         ShaderVariantCollection svc = AssetDatabase.LoadAssetAtPath<ShaderVariantCollection>(path);
